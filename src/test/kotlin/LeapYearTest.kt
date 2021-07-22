@@ -5,7 +5,3 @@ class LeapYearTest : ExpectSpec({
         isLeapYear()
     }
 })
-
-fun isLeapYear() {
-
-}

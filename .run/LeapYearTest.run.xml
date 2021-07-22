@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="LeapYearTest" type="ioKotest" factoryName="Kotest" defaultName="singleModule">
+    <module name="leap-year-kotlin.test" />
+    <shortenClasspath name="NONE" />
+    <option name="passParentEnvs" value="true" />
+    <option name="workingDirectory" value="$MODULE_WORKING_DIR$" />
+    <option name="programParameters" value="" />
+    <option name="specName" value="LeapYearTest" />
+    <option name="testPath" value="" />
+    <option name="packageName" value="" />
+    <option name="vmparams" value="" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

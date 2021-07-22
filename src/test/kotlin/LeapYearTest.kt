@@ -7,5 +7,5 @@ class LeapYearTest : ExpectSpec({
 })
 
 fun isLeapYear() {
-    TODO("Not yet implemented")
+
 }

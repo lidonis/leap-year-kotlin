@@ -13,11 +13,21 @@ class LeapYearTest : ExpectSpec({
                 isLeapYear(a) shouldBe false
             }
         }
+        expect("if divisible by 100 but not by 400") {
+            checkAll(Arb.int().filter { (it isDivisibleBy 100) && !(it isDivisibleBy 400) }) { a ->
+                isLeapYear(a) shouldBe false
+            }
+        }
     }
 
     context("A year is a leap year") {
         expect("if divisible by 4") {
             checkAll(Arb.int().filter { it isDivisibleBy 4 }) { a ->
+                isLeapYear(a) shouldBe true
+            }
+        }
+        expect("if divisible by 400") {
+            checkAll(Arb.int().filter { it isDivisibleBy 400 }) { a ->
                 isLeapYear(a) shouldBe true
             }
         }

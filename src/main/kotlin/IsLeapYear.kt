@@ -1,2 +1,1 @@
-fun isLeapYear(year: Int) {
-}
+fun isLeapYear(year: Int) = false

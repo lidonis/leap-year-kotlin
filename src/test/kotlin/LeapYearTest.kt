@@ -9,4 +9,8 @@ class LeapYearTest : ExpectSpec({
     expect("2020 is a leap year") {
         isLeapYear(2020) shouldBe true
     }
+
+    expect("2016 is a leap year") {
+        isLeapYear(2016) shouldBe true
+    }
 })

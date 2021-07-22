@@ -1,1 +1,1 @@
-fun isLeapYear(year: Int) = year in listOf(2016, 2020)
+fun isLeapYear(year: Int) = year % 4 == 0

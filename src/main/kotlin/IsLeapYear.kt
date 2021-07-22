@@ -1,2 +1,2 @@
-fun isLeapYear(i: Int) {
+fun isLeapYear(year: Int) {
 }

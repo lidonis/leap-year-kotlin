@@ -1,9 +1,7 @@
-fun isLeapYear(year: Int): Boolean {
-    return if (year isDivisibleBy 4) {
-        if (year isDivisibleBy 100) {
-            year isDivisibleBy 400
-        } else true
-    } else false
+fun isLeapYear(year: Int) = when {
+    year isDivisibleBy 400 -> true
+    year isDivisibleBy 100 -> false
+    else -> year isDivisibleBy 4
 }
 
 infix fun Int.isDivisibleBy(divider: Int) = this % divider == 0

@@ -1,0 +1,24 @@
+= Leap year kata in Kotlin
+:icons: font
+
+== Goal
+This repository should be an example of https://en.wikipedia.org/wiki/Test-driven_development[TDD] with each commit representing one step in the process.
+It will be written using the https://kotlinlang.org/[Kotlin] language and using https://kotest.io/[Kotest] as test framework
+
+== Rules
+
+Implement a function that checks if a year is a leap year.
+
+The function should return true if a year is a leap year, and false if it is not.
+
+https://en.wikipedia.org/wiki/Leap_year#Gregorian_calendar[Leap year in the gregorian calendar]
+
+NOTE: Every year that is exactly divisible by four is a leap year, except for years that are exactly divisible by 100, but these centurial years are leap years if they are exactly divisible by 400
+
+
+== Examples
+
+- 2021 is not a leap year (not divisible by 4)
+- 2020 is a leap year (divisible by 4)
+- 2000 is a leap year (divisible by 400)
+- 1900 is not a leap year (divisible by 4, divisible by 100, NOT divisible by 400)

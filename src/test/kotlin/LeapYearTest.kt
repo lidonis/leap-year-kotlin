@@ -22,8 +22,8 @@ class LeapYearTest : ExpectSpec({
     }
 
     context("A year is a leap year") {
-        expect("if divisible by 4") {
-            checkAll(Arb.int().filter { it isDivisibleBy 4 }) { year ->
+        expect("if divisible by 4 but not by 100") {
+            checkAll(Arb.int().filter { (it isDivisibleBy 4)  && !(it isDivisibleBy 100) }) { year ->
                 isLeapYear(year) shouldBe true
             }
         }
